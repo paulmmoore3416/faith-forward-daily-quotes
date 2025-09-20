@@ -1,0 +1,170 @@
+/* Faith Forward Planner CSS Styling */
+
+.faith-forward-app {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faith-forward-header {
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.faith-forward-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.faith-forward-motto {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.calendar-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.calendar-header {
+    background: #4a90e2;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar-day {
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    min-height: 80px;
+    background: white;
+    border-radius: 4px;
+}
+
+.calendar-day:hover {
+    background: #f0f8ff;
+    cursor: pointer;
+}
+
+.calendar-day.today {
+    background: #e3f2fd;
+    border-color: #4a90e2;
+    font-weight: bold;
+}
+
+.event-item {
+    background: #4a90e2;
+    color: white;
+    padding: 2px 6px;
+    margin: 1px 0;
+    border-radius: 3px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.event-item:hover {
+    background: #357abd;
+}
+
+.reflection-widget {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.reflection-verse {
+    font-style: italic;
+    font-size: 14px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.reflection-reference {
+    font-weight: bold;
+    color: #34495e;
+    text-align: right;
+    font-size: 12px;
+}
+
+.time-block-suggestion {
+    background: #e8f5e8;
+    border-left: 4px solid #4caf50;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.event-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.btn-primary {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #357abd;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.toolbar {
+    background: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 8px 8px 0 0;
+}
+
+.search-box {
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.view-selector {
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background: white;
+}

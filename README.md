@@ -38,6 +38,36 @@ Faith Forward Community exists to help people realize the unlimited possibilitie
 
 ---
 
+## 🗓️ Faith Forward Planner
+
+**NEW: Complete Calendar & Planning Application!**
+
+We've expanded beyond daily quotes to include a full-featured calendar and planning application designed specifically for the Faith Forward community.
+
+### ✨ Planner Features
+
+- 📅 **GTK-based Calendar**: Professional calendar application for Ubuntu/Debian
+- 🗣️ **Natural Language Events**: Create events like "Meeting tomorrow at 2pm"
+- ⚡ **Smart Time Blocking**: AI-powered optimal scheduling suggestions
+- ✝️ **Daily Reflections**: Integrated Bible verses and faith-based content
+- 📤 **Export Options**: Export weekly plans to EPUB and Markdown
+- 🖱️ **Drag & Drop**: Intuitive event rescheduling
+- 🔄 **Recurring Events**: Support for daily, weekly, monthly patterns
+- ⏰ **Smart Reminders**: Customizable event notifications
+
+### 🚀 Quick Start - Faith Forward Planner
+
+```bash
+# Download and extract the planner
+cd faith_forward_planner/
+python3 demo.py  # See the demo
+./install.sh     # Full installation
+```
+
+**Download Link:** [Faith Forward Planner v1.0](https://github.com/paulmmoore3416/faith-forward-daily-quotes/releases) *(76KB)*
+
+---
+
 ## Screenshots & Icons
 
 | Welcome Screen | Holiday Badges | Multi-Faith Icons |
@@ -62,6 +92,10 @@ npm run dev
 ## Roadmap
 
 - [x] Project setup and branding
+- [x] **Faith Forward Planner - Complete calendar application**
+- [x] **Natural language event parsing and smart scheduling**
+- [x] **Daily reflection widget with Bible verses**
+- [x] **Export to EPUB and Markdown formats**
 - [ ] 400+ quotes with holiday/religious tagging
 - [ ] Holiday calendar & badge system
 - [ ] Social sharing

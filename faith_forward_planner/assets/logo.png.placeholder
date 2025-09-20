@@ -1,0 +1,11 @@
+# Faith Forward Logo Placeholder
+# This is a placeholder for the actual logo.png file
+# In a real implementation, this would be the Faith Forward logo image
+# Dimensions: Recommended 256x256 pixels
+# Format: PNG with transparency support
+# Colors: Faith Forward brand colors (blues and golds)
+
+# To replace this placeholder:
+# 1. Obtain the actual Faith Forward logo from the brand assets
+# 2. Save as logo.png in this directory
+# 3. Ensure proper dimensions and transparency
