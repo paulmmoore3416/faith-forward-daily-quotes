@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith Forward Daily | Scripture, Prayer & Quote</title>
+  <meta name="description" content="A new scripture, prayer, and quote every day from Faith Forward Foundation, a faith-based ministry to veterans in St. Louis. Spiritus Invictus.">
+  <meta name="theme-color" content="#1e2a33">
+  <meta property="og:title" content="Faith Forward Daily">
+  <meta property="og:description" content="A new scripture, prayer, and quote every day for veterans and believers.">
+  <meta property="og:image" content="https://paulmmoore3416.github.io/faith-forward-daily-quotes/public/faithforwardlogo.png">
+  <link rel="icon" href="public/faithforwardlogo.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital@0;1&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #faf7f0; --card: #ffffff; --ink: #1e2a33; --muted: #5b6770; --gold: #c9a227; --gold-dark: #8a6d12; --line: #e8e2d4; }
+    :root[data-theme="dark"] { --bg: #141c22; --card: #1e2a33; --ink: #f1ede4; --muted: #a9b3ba; --gold: #e0bd4a; --gold-dark: #e0bd4a; --line: #2f3d48; }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141c22; --card: #1e2a33; --ink: #f1ede4; --muted: #a9b3ba; --gold: #e0bd4a; --gold-dark: #e0bd4a; --line: #2f3d48; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Lato, system-ui, sans-serif; line-height: 1.6; }
+    a { color: var(--gold-dark); }
+    .crisis { background: #0e1418; color: #fff; text-align: center; font-size: .85rem; padding: .5rem 1rem; }
+    .crisis a { color: #fff; font-weight: 700; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; max-width: 960px; margin: 0 auto; padding: 1rem; }
+    .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--ink); }
+    .brand img { height: 56px; background: #fff; border-radius: 10px; padding: 2px; }
+    .brand b { font-family: Cinzel, serif; font-size: 1.25rem; display: block; }
+    .brand small { color: var(--gold-dark); letter-spacing: .3em; font-size: .65rem; font-weight: 700; }
+    button, input, select { font: inherit; color: var(--ink); }
+    .btn { background: var(--gold); color: #141c22; border: 0; border-radius: 8px; padding: .5rem 1rem; font-weight: 700; cursor: pointer; }
+    .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    main { max-width: 960px; margin: 0 auto; padding: 0 1rem 3rem; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 1.5rem; margin-bottom: 1rem; }
+    .eyebrow { color: var(--gold-dark); text-transform: uppercase; letter-spacing: .25em; font-size: .72rem; font-weight: 700; margin: 0 0 .5rem; }
+    .verse { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.3rem, 3.6vw, 2rem); line-height: 1.35; margin: 0; }
+    .ref { font-weight: 700; color: var(--gold-dark); margin-top: .5rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 760px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .nav { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: 1rem 0; }
+    .badge { display: inline-block; background: color-mix(in srgb, var(--gold) 20%, transparent); color: var(--gold-dark); border-radius: 999px; padding: .2rem .7rem; font-size: .8rem; font-weight: 700; }
+    .search-results { max-height: 420px; overflow: auto; }
+    .result { border-top: 1px solid var(--line); padding: .6rem 0; }
+    .result:first-child { border-top: 0; }
+    input[type=search], input[type=text], input[type=date], select { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: .45rem .7rem; }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 2rem 1rem; border-top: 1px solid var(--line); }
+    .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  </style>
+</head>
+<body>
+  <div class="crisis">Veteran in crisis? Call <a href="tel:988">988, then press 1</a> · Text <a href="sms:838255">838255</a> · Free, confidential, 24/7.</div>
+  <header>
+    <a class="brand" href="https://paulmmoore3416.github.io/faith-forward/"><img src="public/faithforwardlogo.png" alt="Faith Forward crest"><span><b>Faith Forward Daily</b><small>SPIRITUS INVICTUS</small></span></a>
+    <button class="btn ghost" id="theme" aria-label="Toggle dark mode">🌗</button>
+  </header>
+
+  <main>
+    <p id="greeting" class="eyebrow"></p>
+    <div class="nav">
+      <button class="btn ghost" id="prev" aria-label="Previous day">←</button>
+      <label class="sr" for="date">Date</label><input type="date" id="date">
+      <button class="btn ghost" id="next" aria-label="Next day">→</button>
+      <button class="btn ghost" id="today">Today</button>
+      <span id="streak" class="badge"></span>
+    </div>
+
+    <article class="card" aria-live="polite">
+      <p class="eyebrow" id="feast"></p>
+      <p class="verse" id="verse"></p>
+      <p class="ref" id="ref"></p>
+    </article>
+    <div class="grid">
+      <section class="card"><p class="eyebrow">Daily Prayer · <span id="ptitle"></span></p><p id="prayer"></p></section>
+      <section class="card"><p class="eyebrow">Words to Carry</p><p id="quote" style="font-style:italic"></p><p id="author" class="ref"></p></section>
+    </div>
+    <div class="nav">
+      <button class="btn" id="share">Share today's word</button>
+      <a class="btn ghost" id="fb" target="_blank" rel="noopener">Share on Facebook</a>
+      <button class="btn ghost" id="speak">🔊 Listen</button>
+    </div>
+
+    <section class="card">
+      <p class="eyebrow">Search scripture, prayers & quotes</p>
+      <div class="nav"><label class="sr" for="q">Search</label><input type="search" id="q" placeholder="e.g. courage, peace, Psalm 23" style="flex:1;min-width:200px">
+        <label class="sr" for="theme-filter">Theme</label><select id="theme-filter"><option value="">All verse themes</option></select></div>
+      <div id="results" class="search-results"></div>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">Personalize</p>
+      <div class="nav"><label for="name">Your first name</label><input type="text" id="name" maxlength="30"><button class="btn ghost" id="save-name">Save</button></div>
+      <p style="color:var(--muted);font-size:.9rem;margin:0">Stored only on this device. Come back each day to grow your streak. 🔥</p>
+    </section>
+  </main>
+
+  <footer>
+    A ministry of <a href="https://paulmmoore3416.github.io/faith-forward/">Faith Forward Foundation</a>, St. Louis, Missouri · Founded by The Reverend Deacon Paul Moore · Associated with <a href="https://www.stlveteranshub.com">STL Veterans Hub</a> · <a href="https://www.facebook.com/profile.php?id=61581209302246">Facebook</a><br>
+    Scripture: King James Version (public domain). Prayers © Faith Forward Foundation.
+  </footer>
+
+  <script>
+  (async () => {
+    const $ = (id) => document.getElementById(id);
+    const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+    const pad = (n) => String(n).padStart(2, '0');
+    const iso = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    const data = await fetch('data/devotional.json').then((r) => r.json());
+    let current = new Date();
+
+    // Same rotation as the main site, used past the precomputed range.
+    function fallback(d) {
+      const n = Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000);
+      return { v: n % data.verses.length, q: n % data.quotes.length, p: n % data.prayers.length };
+    }
+    function entry(d) {
+      const e = data.days[iso(d)] || fallback(d);
+      return { verse: e.vx || data.verses[e.v], quote: data.quotes[e.q], prayer: data.prayers[e.p], feast: e.f };
+    }
+    function render() {
+      const e = entry(current);
+      $('date').value = iso(current);
+      $('feast').textContent = e.feast || current.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+      $('verse').textContent = `“${e.verse.text}”`;
+      $('ref').textContent = `${e.verse.ref} (KJV)`;
+      $('ptitle').textContent = e.prayer.title;
+      $('prayer').textContent = e.prayer.text;
+      $('quote').textContent = `“${e.quote.text}”`;
+      $('author').textContent = e.quote.author;
+      const text = `“${e.verse.text}” ${e.verse.ref}. Faith Forward Daily`;
+      $('fb').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href.split('#')[0])}&quote=${encodeURIComponent(text)}`;
+    }
+    function greet() {
+      const name = store.get('ffd-name');
+      const h = new Date().getHours();
+      $('greeting').textContent = `${h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening'}${name ? `, ${name}` : ''}. Here is your daily word.`;
+      $('name').value = name || '';
+    }
+    function streak() {
+      const today = iso(new Date());
+      const last = store.get('ffd-last');
+      let s = +(store.get('ffd-streak') || 0);
+      if (last !== today) {
+        const y = new Date(); y.setDate(y.getDate() - 1);
+        s = last === iso(y) ? s + 1 : 1;
+        store.set('ffd-last', today); store.set('ffd-streak', String(s));
+      }
+      $('streak').textContent = `🔥 ${s}-day streak${s >= 7 ? ' · 🎖 Faithful Week' : ''}${s >= 30 ? ' · 🏅 Month of Prayer' : ''}`;
+    }
+    function search() {
+      const q = $('q').value.trim().toLowerCase(), th = $('theme-filter').value;
+      if (!q && !th) { $('results').innerHTML = ''; return; }
+      const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+      const hits = [
+        ...data.verses.filter((v) => (!th || v.theme === th) && (!q || (v.text + v.ref + v.theme).toLowerCase().includes(q))).map((v) => `<div class="result"><b>${esc(v.ref)}</b> <span class="badge">${esc(v.theme)}</span><br>${esc(v.text)}</div>`),
+        ...(th ? [] : data.prayers.filter((p) => (p.title + p.text).toLowerCase().includes(q)).map((p) => `<div class="result"><b>🙏 ${esc(p.title)}</b><br>${esc(p.text)}</div>`)),
+        ...(th ? [] : data.quotes.filter((x) => (x.text + x.author).toLowerCase().includes(q)).map((x) => `<div class="result">“${esc(x.text)}” <b>${esc(x.author)}</b></div>`)),
+      ];
+      $('results').innerHTML = hits.length ? hits.slice(0, 60).join('') : '<p>No matches.</p>';
+    }
+
+    [...new Set(data.verses.map((v) => v.theme))].sort().forEach((t) => $('theme-filter').append(new Option(t, t)));
+    $('prev').onclick = () => { current.setDate(current.getDate() - 1); render(); };
+    $('next').onclick = () => { current.setDate(current.getDate() + 1); render(); };
+    $('today').onclick = () => { current = new Date(); render(); };
+    $('date').onchange = (e) => { const [y, m, d] = e.target.value.split('-').map(Number); if (y) { current = new Date(y, m - 1, d); render(); } };
+    $('q').oninput = search; $('theme-filter').onchange = search;
+    $('save-name').onclick = () => { store.set('ffd-name', $('name').value.trim()); greet(); };
+    $('share').onclick = async () => {
+      const e = entry(current), text = `“${e.verse.text}” ${e.verse.ref}\n\n${e.prayer.title}: ${e.prayer.text}\n\nFaith Forward Daily: ${location.href.split('#')[0]}`;
+      if (navigator.share) { try { await navigator.share({ title: 'Faith Forward Daily', text }); } catch {} }
+      else { await navigator.clipboard.writeText(text); $('share').textContent = 'Copied ✓'; }
+    };
+    $('speak').onclick = () => { const e = entry(current); const u = new SpeechSynthesisUtterance(`${e.verse.text} ${e.verse.ref}. Let us pray. ${e.prayer.text}`); u.rate = 0.92; speechSynthesis.cancel(); speechSynthesis.speak(u); };
+    const savedTheme = store.get('ffd-theme'); if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    $('theme').onclick = () => {
+      const dark = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() === '#141c22';
+      document.documentElement.dataset.theme = dark ? 'light' : 'dark'; store.set('ffd-theme', document.documentElement.dataset.theme);
+    };
+    greet(); streak(); render();
+  })().catch(() => { document.querySelector('main').insertAdjacentHTML('afterbegin', '<p class="card">Today\'s word could not load. Please refresh.</p>'); });
+  </script>
+</body>
+</html>

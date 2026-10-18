@@ -1,126 +1,78 @@
-# ![Faith Forward Logo](public/logo-faithforward.png)  
-# Faith Forward Daily Quotes
+<p align="center"><img src="public/faithforwardlogo.png" alt="Faith Forward crest" width="200"></p>
 
-> **About:**  
-> Faith Forward is a sanctuary for combat veterans and believers seeking healing, purpose, and legacy.  
-> Founded on _Spiritus Invictus_ — “The Unconquered Spirit”, we blend theology, testimony, and community to restore what war tried to take.
+<h1 align="center">Faith Forward Daily</h1>
+<p align="center"><em>A new scripture, prayer, and quote every day · Spiritus Invictus</em></p>
 
-![Build](https://img.shields.io/github/actions/workflow/status/paulmmoore3416/faith-forward-daily-quotes/deploy.yml?label=Build&style=for-the-badge)
-![Quotes](https://img.shields.io/badge/Quotes-400-blueviolet?style=for-the-badge)
-![Holiday Support](https://img.shields.io/badge/Holidays%20%26%20Faith%20Days-Included-brightgreen?style=for-the-badge)
-![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Yes-black?style=for-the-badge)
-![Multi-Faith](https://img.shields.io/badge/Multi--Faith-Ready-orange?style=for-the-badge)
-![License](https://img.shields.io/github/license/paulmmoore3416/faith-forward-daily-quotes?style=for-the-badge)
+<p align="center">
+<a href="https://paulmmoore3416.github.io/faith-forward-daily-quotes/"><img alt="Live" src="https://img.shields.io/badge/daily-live-c9a227?style=for-the-badge"></a>
+<a href="https://github.com/paulmmoore3416/faith-forward-daily-quotes/actions/workflows/deploy.yml"><img alt="Deploy" src="https://img.shields.io/github/actions/workflow/status/paulmmoore3416/faith-forward-daily-quotes/deploy.yml?label=deploy&style=for-the-badge"></a>
+<a href="https://paulmmoore3416.github.io/faith-forward/"><img alt="Faith Forward" src="https://img.shields.io/badge/faith%20forward-website-1e2a33?style=for-the-badge"></a>
+</p>
 
-## ![badge](public/icons/faithforward.png) Inspiration Every Day
+**Faith Forward Daily** is the daily devotional companion of **[Faith Forward Foundation](https://paulmmoore3416.github.io/faith-forward/)**, a faith-based ministry that provides assistance, resources, supplies, and religious services to displaced and homeless veterans, their families, and the animals who walk beside them in **St. Louis, Missouri**.
 
-Faith Forward Daily Quotes delivers daily inspiration, wisdom, and spiritual encouragement from the KJV Bible and other faith sources, beautifully themed for all major holidays and religious days.
+Founded by **The Reverend Deacon Paul Moore** (Rev. Mr. Paul Moore), a disabled three-tour Iraq veteran, ordained deacon, and creator and founder of Faith Forward Foundation and **[STL Veterans Hub](https://www.stlveteranshub.com)**.
 
----
+> **Veteran in crisis?** Call **988 and press 1**, or text **838255**. Free, confidential, 24/7.
 
-## Mission
+## ✨ Features
 
-Faith Forward Community exists to help people realize the unlimited possibilities God has available. We believe in sharing encouragement, hope, and love from diverse faith traditions, inspiring everyone to move their faith forward every day.
+- 📖 **Daily scripture** from the King James Version (public domain)
+- 🙏 **Daily prayer**: 71 prayers, most written for veterans, handlers, families, and outreach teams, plus traditional prayers (St. Michael, Memorare, St. Francis, Anima Christi)
+- 💬 **Daily quote** from saints, chaplains, presidents, veterans, and Faith Forward
+- 🗓️ **Feast days and holidays**: Veterans Day (St. Martin of Tours), Memorial Day, Pearl Harbor, 9/11, St. Michael, St. Francis (Blessing of the Animals), Advent, Christmas, Ash Wednesday, Holy Week, Easter, Pentecost, and more. Easter is computed each year.
+- 🔎 **Search and filter** scripture by theme (courage, healing, brotherhood, hope…), plus prayers and quotes
+- 🔥 **Daily streak badges**, **personal greeting**, **dark mode**, **share** (Web Share / Facebook), **listen** (text-to-speech)
+- 📱 Installable as an app (web manifest)
+- ⚡ No build step: a single static page plus `data/devotional.json`
 
----
+**Same word everywhere:** the website, the Faith Forward Command Center, and this site all use the same devotional engine (`faith-forward/src/data/devotional.ts`), so everyone in the ministry prays the same scripture and prayer each day.
 
-## Features
-
-- ✨ **400+ Curated Quotes:** From the KJV Bible and other faith/inspirational sources, tagged for special days.
-- 🗓️ **Holiday & Religious Day Focus:** Quotes themed for Christian, Jewish, Islamic, and other holidays (Easter, Christmas, Ramadan, Yom Kippur, and more!).
-- 🏅 **Badges & Achievements:** Earn badges for streaks, holidays, and sharing!
-- 🎨 **Beautiful UI:** Every element styled with icons and badges.
-- 🌗 **Dark Mode:** Easy toggle for night/day.
-- 👤 **Personalization:** Enter your name for a personal experience.
-- 📅 **Calendar View:** Browse quotes by day, faith, or holiday.
-- 🔎 **Search & Filter:** Find quotes by keyword, author, or theme.
-- 🔗 **Shareable:** Share inspiration with easy social buttons.
-
----
-
-## 🗓️ Faith Forward Planner
-
-**NEW: Complete Calendar & Planning Application!**
-
-We've expanded beyond daily quotes to include a full-featured calendar and planning application designed specifically for the Faith Forward community.
-
-### ✨ Planner Features
-
-- 📅 **GTK-based Calendar**: Professional calendar application for Ubuntu/Debian
-- 🗣️ **Natural Language Events**: Create events like "Meeting tomorrow at 2pm"
-- ⚡ **Smart Time Blocking**: AI-powered optimal scheduling suggestions
-- ✝️ **Daily Reflections**: Integrated Bible verses and faith-based content
-- 📤 **Export Options**: Export weekly plans to EPUB and Markdown
-- 🖱️ **Drag & Drop**: Intuitive event rescheduling
-- 🔄 **Recurring Events**: Support for daily, weekly, monthly patterns
-- ⏰ **Smart Reminders**: Customizable event notifications
-
-### 🚀 Quick Start - Faith Forward Planner
-
-```bash
-# Download and extract the planner
-cd faith_forward_planner/
-python3 demo.py  # See the demo
-./install.sh     # Full installation
-```
-
-**Download Link:** [Faith Forward Planner v1.0](https://github.com/paulmmoore3416/faith-forward-daily-quotes/releases) *(76KB)*
-
----
-
-## Screenshots & Icons
-
-| Welcome Screen | Holiday Badges | Multi-Faith Icons |
-|:--------------:|:-------------:|:-----------------:|
-| ![logo](public/logo-faithforward.png) | ![badge](public/icons/faithforward.png) | ![faith icons](public/icons/all-faiths.png) |
-
----
-
-## Quick Start
+## 🚀 Run locally
 
 ```bash
 git clone https://github.com/paulmmoore3416/faith-forward-daily-quotes.git
 cd faith-forward-daily-quotes
-npm install
-npm run dev
+python3 -m http.server 8000   # http://localhost:8000
 ```
 
-- Visit [localhost:5173](http://localhost:5173) to view locally.
+## 🔄 Updating the devotional data
+
+The data is exported from the main repository so both stay in sync:
+
+```bash
+# from a checkout of paulmmoore3416/faith-forward, next to this repo
+npx tsx scripts/export-devotional.ts ../faith-forward-daily-quotes/data/devotional.json
+```
+
+`data/devotional.json` holds the verse, quote, and prayer pools plus a precomputed schedule for 2026-2030. After 2030 the page falls back to the same rotation the main site uses; re-export to extend the schedule.
+
+## 🗓️ Faith Forward Planner (desktop app)
+
+This repository also contains the **Faith Forward Planner**, a GTK calendar application for Ubuntu/Debian with natural-language events, smart time blocking, a daily reflection widget, and EPUB/Markdown export.
+
+```bash
+cd faith_forward_planner
+python3 demo.py      # demo
+./install.sh         # full install
+```
+
+See [faith_forward_planner/README.md](faith_forward_planner/README.md).
+
+## 🌐 Deployment
+
+GitHub Actions deploys the site to GitHub Pages on every push to `main` (`.github/workflows/deploy.yml`). In **Settings → Pages**, set **Source: GitHub Actions**.
+
+## 🤝 Related
+
+| | |
+|---|---|
+| Faith Forward website | https://paulmmoore3416.github.io/faith-forward/ |
+| K9 Handler Training Suite | https://paulmmoore3416.github.io/faith-forward/k9-suite.html |
+| Main repository | https://github.com/paulmmoore3416/faith-forward |
+| STL Veterans Hub | https://www.stlveteranshub.com |
+| Facebook | https://www.facebook.com/profile.php?id=61581209302246 |
 
 ---
 
-## Roadmap
-
-- [x] Project setup and branding
-- [x] **Faith Forward Planner - Complete calendar application**
-- [x] **Natural language event parsing and smart scheduling**
-- [x] **Daily reflection widget with Bible verses**
-- [x] **Export to EPUB and Markdown formats**
-- [ ] 400+ quotes with holiday/religious tagging
-- [ ] Holiday calendar & badge system
-- [ ] Social sharing
-- [ ] PWA/mobile install support
-- [ ] Suggest-a-quote form
-
----
-
-## Contributing
-
-Pull requests are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
-## License
-
-[MIT](LICENSE)
-
----
-
-## Credits
-
-- **Logo & Artwork:** Provided by project owner, see `/public`
-- **Icons:** See `/public/icons` (multi-faith, holidays, badges)
-
----
-
-> Spiritus Invictus – Faith Forward
+<p align="center">Scripture: KJV (public domain). Prayers and site © Faith Forward Foundation · St. Louis, Missouri</p>

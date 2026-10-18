@@ -1,0 +1,10 @@
+{
+  "name": "Faith Forward Daily",
+  "short_name": "FF Daily",
+  "description": "Daily scripture, prayer and quote from Faith Forward Foundation.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#141c22",
+  "theme_color": "#1e2a33",
+  "icons": [{ "src": "public/faithforwardlogo.png", "sizes": "1024x1536", "type": "image/png", "purpose": "any" }]
+}
