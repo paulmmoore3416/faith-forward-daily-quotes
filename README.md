@@ -11,7 +11,7 @@
 
 **Faith Forward Daily** is the daily devotional companion of **[Faith Forward Foundation](https://paulmmoore3416.github.io/faith-forward/)**, a faith-based ministry that provides assistance, resources, supplies, and religious services to displaced and homeless veterans, their families, and the animals who walk beside them in **St. Louis, Missouri**.
 
-Founded by **The Reverend Deacon Paul Moore** (Rev. Mr. Paul Moore), a disabled three-tour Iraq veteran, ordained deacon, and creator and founder of Faith Forward Foundation and **[STL Veterans Hub](https://www.stlveteranshub.com)**.
+Founded by **The Reverend Paul Moore** (Rev. Paul Moore), a disabled three-tour Iraq veteran, ordained minister, and creator and founder of Faith Forward Foundation and **[STL Veterans Hub](https://www.stlveteranshub.com)**.
 
 > **Veteran in crisis?** Call **988 and press 1**, or text **838255**. Free, confidential, 24/7.
 
